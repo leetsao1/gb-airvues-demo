@@ -1,15 +1,26 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 const Slide1 = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-blue-900 to-black text-white">
       <div className="max-w-4xl mx-auto text-center">
+        <div className="mb-8 animate-fade-in">
+          <Image
+            src="/images/gb-logo.svg"
+            alt="Gracie Barra Logo"
+            width={200}
+            height={200}
+            className="mx-auto"
+            priority
+          />
+        </div>
         <h1 className="text-6xl font-bold text-white mb-8 animate-fade-in">
           Welcome to the Gracie Barra Global Database
         </h1>
-        <p className="text-xl text-white/90 mb-12 max-w-3xl animate-fade-in-delay">
+        <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto animate-fade-in-delay">
           A unified platform connecting our global community, preserving our
           legacy, and empowering our future
         </p>
