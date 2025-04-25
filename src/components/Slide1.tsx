@@ -15,12 +15,12 @@ const Slide1 = () => {
         </p>
         <div className="bg-blue-900/30 p-8 rounded-lg backdrop-blur-sm animate-fade-in-delayed">
           <p className="text-xl leading-relaxed">
-            "Today we introduce a transformational initiative that connects
-            everything and everyone in the Gracie Barra network—students,
-            instructors, schools, and leadership—into a single, living, global
-            system. Our goal is to create excitement and alignment as we
-            showcase the strategy, the technology, and the impact of the GB
-            Global Database."
+            &ldquo;Today we introduce a transformational initiative that
+            connects everything and everyone in the Gracie Barra
+            network&mdash;students, instructors, schools, and
+            leadership&mdash;into a single, living, global system. Our goal is
+            to create excitement and alignment as we showcase the strategy, the
+            technology, and the impact of the GB Global Database.&rdquo;
           </p>
           <p className="mt-4 text-right text-blue-300">- Flavio Almeida</p>
         </div>

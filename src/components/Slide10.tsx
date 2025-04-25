@@ -12,7 +12,7 @@ const Slide10 = () => {
 
         <div className="bg-blue-900/30 p-8 rounded-lg backdrop-blur-sm mb-12 animate-fade-in-delay">
           <p className="text-2xl italic text-center text-white/90">
-            &ldquo;Together, we&apos;re not just building a database &ndash;
+            &ldquo;Together, we&apos;re not just building a database &mdash;
             we&apos;re creating the digital foundation for Gracie Barra&apos;s
             next century of excellence.&rdquo;
           </p>

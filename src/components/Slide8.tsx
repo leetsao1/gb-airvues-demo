@@ -38,7 +38,7 @@ const Slide8 = () => {
     <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-teal-900 to-black text-white">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold mb-8 text-center animate-fade-in">
-          How We'll Get There
+          How We&apos;ll Get There
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-up">
