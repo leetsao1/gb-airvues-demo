@@ -52,9 +52,12 @@ const Slide8 = () => {
                 <h2 className="text-2xl font-semibold text-teal-300">
                   {phase.title}
                 </h2>
-                <span className="px-3 py-1 bg-teal-500/20 rounded-full text-sm">
-                  {phase.status}
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium text-teal-400">
+                    Status:
+                  </span>
+                  <span className="text-sm text-white/80">{phase.status}</span>
+                </div>
               </div>
               <div className="space-y-3">
                 {phase.items.map((item, itemIndex) => (

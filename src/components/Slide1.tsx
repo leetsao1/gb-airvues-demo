@@ -6,12 +6,13 @@ const Slide1 = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-blue-900 to-black text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-5xl font-bold mb-4 animate-fade-in">
-          Introducing the Gracie Barra Global Database
+        <h1 className="text-6xl font-bold text-white mb-8 animate-fade-in">
+          Welcome to the Gracie Barra Global Database
         </h1>
-        <h2 className="text-3xl text-blue-300 mb-8 animate-slide-up">
-          Unifying Our Legacy, Elevating Our Future
-        </h2>
+        <p className="text-xl text-white/90 mb-12 max-w-3xl animate-fade-in-delay">
+          A unified platform connecting our global community, preserving our
+          legacy, and empowering our future
+        </p>
         <div className="bg-blue-900/30 p-8 rounded-lg backdrop-blur-sm animate-fade-in-delayed">
           <p className="text-xl leading-relaxed">
             "Today we introduce a transformational initiative that connects

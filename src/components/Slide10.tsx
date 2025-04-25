@@ -10,14 +10,11 @@ const Slide10 = () => {
           Building the Future of GB, Together
         </h1>
 
-        <div className="bg-blue-900/30 p-8 rounded-lg backdrop-blur-sm border border-blue-500/20 animate-fade-in-delayed">
-          <p className="text-xl leading-relaxed">
-            "This isn't just about technology. It's about our mission, our
-            people, and our legacy. The Gracie Barra Global Database will
-            connect our past, present, and future—creating a stronger, more
-            unified, and more efficient organization. Together, we will elevate
-            the Gracie Barra experience for every student, professor, and school
-            in the world."
+        <div className="bg-blue-900/30 p-8 rounded-lg backdrop-blur-sm mb-12 animate-fade-in-delay">
+          <p className="text-2xl italic text-center text-white/90">
+            &ldquo;Together, we&apos;re not just building a database &ndash;
+            we&apos;re creating the digital foundation for Gracie Barra&apos;s
+            next century of excellence.&rdquo;
           </p>
         </div>
 
