@@ -5,14 +5,14 @@ import Image from "next/image";
 
 const Slide1 = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-blue-900 to-black text-white">
+    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-blue-900 to-black text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-8 animate-fade-in">
+        <div className="mb-12 animate-fade-in">
           <Image
-            src="/images/gb-logo.svg"
+            src="/images/gb-logo.png"
             alt="Gracie Barra Logo"
-            width={200}
-            height={200}
+            width={400}
+            height={400}
             className="mx-auto"
             priority
           />

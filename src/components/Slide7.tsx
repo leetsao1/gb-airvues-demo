@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import LogoHeader from "./LogoHeader";
 
 const Slide7 = () => {
   const benefits = {
@@ -29,7 +30,8 @@ const Slide7 = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-pink-900 to-black text-white">
+    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-pink-900 to-black text-white">
+      <LogoHeader />
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold mb-8 text-center animate-fade-in">
           What This Means for You
