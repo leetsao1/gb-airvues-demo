@@ -9,7 +9,7 @@ const Slide2 = () => {
       <LogoHeader />
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold mb-8 text-center animate-fade-in">
-          One Team, One System, One Source of Truth
+          One Team, One Shield, One Database
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-slide-up">

@@ -19,10 +19,10 @@ const Slide9 = () => {
             </h2>
             <div className="space-y-4">
               {[
-                "Endorsement of the roadmap",
-                "Active participation in upcoming regional onboarding sessions",
-                "Strategic alignment across entities",
-                "Feedback and continuous collaboration",
+                "Transfer your Monday.com database to our account to enhance integration with the Global Database and improve efficiency.",
+                "One representative from each entity will meet with us to capture specific needs",
+                "Align on the vision and reinforce the importance of the Global JJ initiative",
+                "Target completion for all meetings: End of Q2",
               ].map((item, index) => (
                 <div
                   key={index}

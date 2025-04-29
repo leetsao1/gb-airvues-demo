@@ -9,21 +9,20 @@ const Slide6 = () => {
       <LogoHeader />
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold mb-8 text-center animate-fade-in">
-          See the Vision in Action
+          Setting the Vision into Action
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-slide-up">
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-indigo-300">
-              Demo Highlights
+              Highlights
             </h2>
             <div className="space-y-4">
               {[
-                "Live GB School Map synced with franchise data",
+                "Live GB World Map",
                 "Seamless instructor promotion and certificate approval",
-                "Student dashboard mockups",
-                "Admin view for managing schools and global lineage",
-                "LearnWorlds integration preview",
+                "Global Black Belts Lists, Global ICP Certified Instructors List",
+                "LearnWorlds Integration",
               ].map((item, index) => (
                 <div
                   key={index}
@@ -47,8 +46,7 @@ const Slide6 = () => {
               <li>• Real-time data visualization</li>
               <li>• Interactive school location mapping</li>
               <li>• Dynamic user role management</li>
-              <li>• Automated workflow demonstrations</li>
-              <li>• Integration showcase</li>
+              <li>• Automated workflowss</li>
             </ul>
           </div>
         </div>

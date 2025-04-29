@@ -20,9 +20,10 @@ const Slide4 = () => {
             <div className="space-y-4">
               {[
                 "Integrated with Monday.com, Airtable, LearnWorlds, SmoothComp, GB Members, and Uscreen",
-                "Global ID system for every student and instructor",
-                "Fully automated promotion approvals and certifications",
-                "Real-time dashboards for school owners, students, and executives",
+                "Develop an efficient GB Global ID process",
+                "Fully automated rank verification and certification process",
+                "Build a Black Belts 🥋 and ICP certified instructors lists",
+                "Real-time dashboards for school owners, students, and the global executive team",
                 "Global KPIs for growth, school performance, and instructor development",
               ].map((item, index) => (
                 <div
@@ -45,7 +46,9 @@ const Slide4 = () => {
             </h2>
             <ul className="space-y-3 text-lg">
               <li>• Streamlined operations across all GB entities</li>
-              <li>• Enhanced student and instructor experience</li>
+              <li>
+                • Enhanced student, instructor and school owner experience
+              </li>
               <li>• Data-driven decision making</li>
               <li>• Improved communication and collaboration</li>
               <li>• Scalable growth management</li>

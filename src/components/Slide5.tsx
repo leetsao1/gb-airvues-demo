@@ -39,13 +39,13 @@ const Slide5 = () => {
 
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-yellow-300">
-              Gracie Barra Core Team
+              Gracie Barra Project Team
             </h2>
             <div className="space-y-4">
               {[
                 "Flavio Almeida – Vision and Strategic Oversight",
                 "Amanda Machado – Project Operations Lead",
-                "Regional Support Teams – GBNA, GBBR, GBEU, GB Online, and more",
+                "Support Teams – GBNA, GBBR, GBEU, GBO, and others",
               ].map((item, index) => (
                 <div
                   key={index}

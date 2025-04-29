@@ -9,7 +9,7 @@ const Slide3 = () => {
       <LogoHeader />
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold mb-8 text-center animate-fade-in">
-          Disconnected Systems Are Holding Us Back
+          What is Holding Us Back
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-slide-up">
@@ -19,10 +19,10 @@ const Slide3 = () => {
             </h2>
             <div className="space-y-4">
               {[
-                "Multiple disconnected systems (Knack, LearnWorlds, Monday, local CRMs)",
-                "Manual, delayed promotion approvals",
-                "Duplicated work across schools and regions",
-                "No unified student or instructor profiles",
+                "Multiple disconnected systems (Knack, LearnWorlds, SmoothComp and U-Screen ects)",
+                "Manual, delayed rank approvals",
+                "Duplicated work across GBJJ regional offices",
+                "No unified student, instructor or school owner profiles",
                 "No centralized visibility into school growth",
                 "Lack of real-time data for executive decision-making",
               ].map((item, index) => (
@@ -43,9 +43,10 @@ const Slide3 = () => {
           <div className="bg-red-900/30 p-6 rounded-lg backdrop-blur-sm border border-red-500/20">
             <h2 className="text-2xl font-semibold mb-4 text-red-300">Impact</h2>
             <p className="text-lg leading-relaxed">
-              These challenges create inefficiencies, slow down growth, and make
-              it difficult to maintain the high standards of the Gracie Barra
-              network. The GB Global Database will address these issues head-on.
+              These challenges create inefficiencies, slow down growth, make it
+              difficult to maintain the high standards of the Gracie Barra
+              network and also undermines the Gracie Barra scalability. The GB
+              Global Database will address these issues head-on.
             </p>
           </div>
         </div>
