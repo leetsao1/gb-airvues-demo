@@ -1,17 +1,22 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
 import LogoHeader from "./LogoHeader";
 
+interface HighlightItem {
+  text: string;
+  icon: string;
+}
+
+interface FeatureItem {
+  text: string;
+  icon: string;
+}
+
 const Slide6 = () => {
-  const { scrollYProgress } = useScroll();
   const [showMap, setShowMap] = useState(false);
 
-  const opacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-  const scale = useTransform(scrollYProgress, [0, 0.1], [0.8, 1]);
-
-  const highlights = [
+  const highlights: HighlightItem[] = [
     { text: "Live GB World Map", icon: "🌎" },
     { text: "Global GB Database", icon: "🗄️" },
     {
@@ -25,7 +30,7 @@ const Slide6 = () => {
     { text: "LearnWorlds Integration", icon: "🔄" },
   ];
 
-  const features = [
+  const features: FeatureItem[] = [
     { text: "Real-time data visualization", icon: "📊" },
     { text: "Interactive school location mapping", icon: "📍" },
     { text: "Dynamic user role management", icon: "👥" },
