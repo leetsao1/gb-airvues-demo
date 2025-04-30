@@ -55,7 +55,7 @@ const SlideContainer = () => {
       </div>
 
       {/* Navigation Controls - Moved to bottom center for better mobile access */}
-      <div className="fixed bottom-0 left-0 right-0 p-3 sm:p-6 flex justify-between items-center bg-gradient-to-t from-black/50 to-transparent">
+      <div className="fixed bottom-0 left-0 right-0 p-3 sm:p-6 flex justify-between items-center bg-gradient-to-t from-black/50 to-transparent z-50">
         <button
           onClick={prevSlide}
           disabled={currentSlide === 1}
