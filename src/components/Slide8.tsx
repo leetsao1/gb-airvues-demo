@@ -7,73 +7,99 @@ const Slide8 = () => {
   const phases = [
     {
       title: "Phase 1 – Q1 2025",
+      icon: "🚀",
       items: [
-        "SyncMap",
-        "Instructor Database",
-        "Monday Integration (Complete)",
+        { text: "SyncMap", icon: "🗺️" },
+        { text: "Instructor Database", icon: "👨‍🏫" },
+        { text: "Monday Integration (Complete)", icon: "✅" },
       ],
       status: "In Progress",
+      statusIcon: "⏳",
     },
     {
       title: "Phase 2 – Q2 2025",
+      icon: "🔄",
       items: [
-        "LearnWorlds Integration",
-        "Global ID Generation",
-        "Certified Instructor & Black Belt Lists",
+        { text: "LearnWorlds Integration", icon: "🔗" },
+        { text: "Global ID Generation", icon: "🆔" },
+        { text: "Certified Instructor & Black Belt Lists", icon: "🥋" },
       ],
       status: "Planned",
+      statusIcon: "📋",
     },
     {
       title: "Phase 3 – Q3 2025",
+      icon: "🎯",
       items: [
-        "Full Master Data System",
-        "Regional CRM Integrations",
-        "Single Sign-On",
-        "Advanced Reporting & Automation",
+        { text: "Full Master Data System", icon: "💾" },
+        { text: "Regional CRM Integrations", icon: "🌐" },
+        { text: "Single Sign-On", icon: "🔑" },
+        { text: "Advanced Reporting & Automation", icon: "📊" },
       ],
       status: "Planned",
+      statusIcon: "📋",
     },
   ];
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-teal-900 to-black text-white">
-      <LogoHeader />
+    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-violet-950 via-purple-900 to-indigo-950 text-white">
+      <LogoHeader showOnMobile={false} />
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold mb-8 text-center animate-fade-in">
-          How We&apos;ll Get There
+          How We&apos;ll Get There 🎯
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-up">
           {phases.map((phase, index) => (
             <div
               key={phase.title}
-              className="bg-teal-900/30 p-6 rounded-lg backdrop-blur-sm border border-teal-500/20 animate-fade-in"
+              className="bg-teal-950/30 p-6 rounded-lg backdrop-blur-sm border border-teal-600/20 animate-fade-in"
               style={{ animationDelay: `${index * 0.3}s` }}
             >
-              <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-semibold text-teal-300">
+              <div className="flex flex-col gap-2 mb-4">
+                <h2 className="text-2xl font-semibold text-teal-200 flex items-center gap-2">
+                  <span>{phase.icon}</span>
                   {phase.title}
                 </h2>
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium text-teal-400">
+                  <span className="text-sm font-medium text-teal-300 uppercase tracking-wider">
                     Status:
                   </span>
-                  <span className="text-sm text-white/80">{phase.status}</span>
+                  <span
+                    className={`text-sm px-3 py-1 rounded-full flex items-center gap-1.5 ${
+                      phase.status === "In Progress"
+                        ? "bg-yellow-500/20 text-yellow-300 border border-yellow-500/30"
+                        : "bg-blue-500/20 text-blue-300 border border-blue-500/30"
+                    }`}
+                  >
+                    <span>{phase.statusIcon}</span>
+                    {phase.status}
+                  </span>
                 </div>
               </div>
               <div className="space-y-3">
                 {phase.items.map((item, itemIndex) => (
                   <div key={itemIndex} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center mt-1 flex-shrink-0">
-                      <span className="text-sm">→</span>
+                    <div className="w-8 h-8 rounded-full bg-teal-500 flex items-center justify-center mt-1 flex-shrink-0">
+                      <span className="text-xl">{item.icon}</span>
                     </div>
-                    <p className="text-lg">{item}</p>
+                    <p className="text-lg">{item.text}</p>
                   </div>
                 ))}
               </div>
             </div>
           ))}
         </div>
+      </div>
+      <div className="absolute bottom-4 w-full text-center">
+        <a
+          href="https://airvues.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-white/40 hover:text-white/60 transition-colors"
+        >
+          Designed by Airvues
+        </a>
       </div>
     </div>
   );

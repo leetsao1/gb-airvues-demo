@@ -4,63 +4,77 @@ import React from "react";
 import LogoHeader from "./LogoHeader";
 
 const Slide5 = () => {
+  const airvuesTeam = [
+    { text: "Lee Tsao – Lead Architect", icon: "👨‍💻" },
+    { text: "Enrique Torreblanca – Systems Developer", icon: "🛠️" },
+    { text: "David Aguilo – Project Manager", icon: "📊" },
+  ];
+
+  const gbTeam = [
+    { text: "Flavio Almeida – Vision and Strategic Oversight", icon: "🥋" },
+    { text: "Amanda Machado – Project Operations Lead", icon: "👩‍💼" },
+    { text: "Support Teams – GBNA, GBBR, GBEU, GBO, and others", icon: "🌎" },
+  ];
+
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-yellow-900 to-black text-white">
-      <LogoHeader />
+    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-amber-700 via-amber-800 to-stone-800 text-white">
+      <LogoHeader showOnMobile={false} />
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold mb-8 text-center animate-fade-in">
-          Built by Experts, Guided by GB
+          Built by Experts 🛠️, Guided by GB 🌟
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-slide-up">
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold text-yellow-300">
-              Airvues Team
+            <h2 className="text-3xl font-semibold text-amber-200">
+              Airvues Team 💻
             </h2>
             <div className="space-y-4">
-              {[
-                "Lee Tsao – Lead Architect",
-                "Enrique Torreblanca – Systems Developer",
-                "David Aguilo – Project Manager",
-              ].map((item, index) => (
+              {airvuesTeam.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-3 bg-yellow-900/20 p-4 rounded-lg animate-fade-in"
+                  className="flex items-start gap-3 bg-amber-900/30 p-4 rounded-lg animate-fade-in backdrop-blur-sm border border-amber-600/20 shadow-lg"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1 flex-shrink-0">
-                    <span className="text-sm">👨‍💻</span>
+                  <div className="w-8 h-8 rounded-full bg-amber-700 flex items-center justify-center mt-1 flex-shrink-0 shadow-md">
+                    <span className="text-xl">{item.icon}</span>
                   </div>
-                  <p className="text-lg">{item}</p>
+                  <p className="text-lg text-amber-100">{item.text}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold text-yellow-300">
-              Gracie Barra Project Team
+            <h2 className="text-3xl font-semibold text-amber-200">
+              Gracie Barra Project Team ⭐
             </h2>
             <div className="space-y-4">
-              {[
-                "Flavio Almeida – Vision and Strategic Oversight",
-                "Amanda Machado – Project Operations Lead",
-                "Support Teams – GBNA, GBBR, GBEU, GBO, and others",
-              ].map((item, index) => (
+              {gbTeam.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-3 bg-yellow-900/20 p-4 rounded-lg animate-fade-in"
+                  className="flex items-start gap-3 bg-amber-900/30 p-4 rounded-lg animate-fade-in backdrop-blur-sm border border-amber-600/20 shadow-lg"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center mt-1 flex-shrink-0">
-                    <span className="text-sm">👥</span>
+                  <div className="w-8 h-8 rounded-full bg-amber-700 flex items-center justify-center mt-1 flex-shrink-0 shadow-md">
+                    <span className="text-xl">{item.icon}</span>
                   </div>
-                  <p className="text-lg">{item}</p>
+                  <p className="text-lg text-amber-100">{item.text}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-4 w-full text-center">
+        <a
+          href="https://airvues.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-white/40 hover:text-white/60 transition-colors"
+        >
+          Designed by Airvues
+        </a>
       </div>
     </div>
   );

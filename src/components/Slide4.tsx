@@ -4,57 +4,94 @@ import React from "react";
 import LogoHeader from "./LogoHeader";
 
 const Slide4 = () => {
+  const features = [
+    {
+      text: "Integrated with Monday.com, Airtable, LearnWorlds, SmoothComp, GB Members, and Uscreen",
+      icon: "🔄",
+    },
+    { text: "Develop an efficient GB Global ID process", icon: "🆔" },
+    {
+      text: "Fully automated rank verification and certification process",
+      icon: "✨",
+    },
+    {
+      text: "Build a Black Belts and ICP certified instructors lists",
+      icon: "🥋",
+    },
+    {
+      text: "Real-time dashboards for school owners, students, and the global executive team",
+      icon: "📊",
+    },
+    {
+      text: "Global KPIs for growth, school performance, and instructor development",
+      icon: "📈",
+    },
+  ];
+
+  const benefits = [
+    { text: "Streamlined operations across all GB entities", icon: "⚡" },
+    {
+      text: "Enhanced student, instructor and school owner experience",
+      icon: "🌟",
+    },
+    { text: "Data-driven decision making", icon: "🎯" },
+    { text: "Improved communication and collaboration", icon: "🤝" },
+    { text: "Scalable growth management", icon: "📱" },
+  ];
+
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-green-900 to-black text-white">
-      <LogoHeader />
+    <div className="relative min-h-screen flex flex-col items-center justify-center p-8 bg-gradient-to-br from-emerald-800 via-teal-900 to-cyan-950 text-white">
+      <LogoHeader showOnMobile={false} />
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold mb-8 text-center animate-fade-in">
-          The GB Global Database
+          The GB Global Database 🌐
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-slide-up">
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold text-green-300">
-              Platform Features
+            <h2 className="text-3xl font-semibold text-teal-100">
+              Development Features ⚡
             </h2>
             <div className="space-y-4">
-              {[
-                "Integrated with Monday.com, Airtable, LearnWorlds, SmoothComp, GB Members, and Uscreen",
-                "Develop an efficient GB Global ID process",
-                "Fully automated rank verification and certification process",
-                "Build a Black Belts 🥋 and ICP certified instructors lists",
-                "Real-time dashboards for school owners, students, and the global executive team",
-                "Global KPIs for growth, school performance, and instructor development",
-              ].map((item, index) => (
+              {features.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-3 bg-green-900/20 p-4 rounded-lg animate-fade-in"
+                  className="flex items-start gap-3 bg-teal-900/40 p-4 rounded-lg animate-fade-in backdrop-blur-md border border-teal-600/30 shadow-lg"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center mt-1 flex-shrink-0">
-                    <span className="text-sm">✓</span>
+                  <div className="w-8 h-8 rounded-full bg-teal-700 flex items-center justify-center mt-1 flex-shrink-0 shadow-md">
+                    <span className="text-xl">{item.icon}</span>
                   </div>
-                  <p className="text-lg">{item}</p>
+                  <p className="text-lg text-teal-100">{item.text}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-green-900/30 p-6 rounded-lg backdrop-blur-sm border border-green-500/20">
-            <h2 className="text-2xl font-semibold mb-4 text-green-300">
-              Key Benefits
+          <div className="bg-teal-900/40 p-6 rounded-lg backdrop-blur-md border border-teal-600/30 shadow-lg">
+            <h2 className="text-2xl font-semibold mb-4 text-teal-100">
+              Key Benefits 🎯
             </h2>
-            <ul className="space-y-3 text-lg">
-              <li>• Streamlined operations across all GB entities</li>
-              <li>
-                • Enhanced student, instructor and school owner experience
-              </li>
-              <li>• Data-driven decision making</li>
-              <li>• Improved communication and collaboration</li>
-              <li>• Scalable growth management</li>
+            <ul className="space-y-3 text-lg text-teal-100">
+              {benefits.map((benefit, index) => (
+                <li key={index} className="flex items-center gap-2">
+                  <span className="text-xl">{benefit.icon}</span>
+                  {benefit.text}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-4 w-full text-center">
+        <a
+          href="https://airvues.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-white/40 hover:text-white/60 transition-colors"
+        >
+          Designed by Airvues
+        </a>
       </div>
     </div>
   );

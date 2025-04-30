@@ -3,10 +3,18 @@
 import React from "react";
 import Image from "next/image";
 
-const LogoHeader = () => {
+interface LogoHeaderProps {
+  showOnMobile?: boolean;
+}
+
+const LogoHeader = ({ showOnMobile = false }: LogoHeaderProps) => {
   return (
-    <div className="absolute top-6 w-full flex justify-between items-center px-8 animate-fade-in">
-      <div className="w-48">
+    <div
+      className={`absolute top-4 sm:top-6 w-full max-w-6xl mx-auto left-0 right-0 flex justify-between items-center px-4 sm:px-8 animate-fade-in ${
+        !showOnMobile ? "hidden sm:flex" : "flex"
+      }`}
+    >
+      <div className="w-24 sm:w-48">
         <Image
           src="/images/Airvues Sideways.png"
           alt="Airvues Logo"
@@ -16,7 +24,7 @@ const LogoHeader = () => {
           priority
         />
       </div>
-      <div className="w-24">
+      <div className="w-12 sm:w-24">
         <Image
           src="/images/gb-logo.png"
           alt="Gracie Barra Logo"
