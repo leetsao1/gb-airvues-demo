@@ -40,6 +40,11 @@ const SlideContainer = () => {
 
   return (
     <div className="relative min-h-screen">
+      {/* Slide Counter - Moved to top-right */}
+      <div className="fixed top-4 right-4 text-white/90 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium z-[90]">
+        {currentSlide} / {totalSlides}
+      </div>
+
       {/* Current Slide */}
       <div className="min-h-screen">
         {currentSlide === 1 && <Slide1 />}
@@ -52,6 +57,20 @@ const SlideContainer = () => {
         {currentSlide === 8 && <Slide8 />}
         {currentSlide === 9 && <Slide9 />}
         {currentSlide === 10 && <Slide10 />}
+      </div>
+
+      {/* Signature */}
+      <div className="fixed bottom-20 sm:bottom-16 w-full text-center z-[100]">
+        <div className="pointer-events-none">
+          <a
+            href="https://airvues.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-xs sm:text-sm text-white/40 hover:text-white/60 transition-colors px-4 py-2 rounded-full bg-black/20 backdrop-blur-sm hover:bg-black/30 pointer-events-auto"
+          >
+            Designed by Airvues
+          </a>
+        </div>
       </div>
 
       {/* Navigation Controls - Moved to bottom center for better mobile access */}
@@ -76,11 +95,6 @@ const SlideContainer = () => {
           </svg>
           <span className="hidden sm:inline">Previous</span>
         </button>
-
-        {/* Slide Counter - Centered between navigation buttons */}
-        <div className="text-white/90 bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm sm:text-base font-medium">
-          {currentSlide} / {totalSlides}
-        </div>
 
         <button
           onClick={nextSlide}

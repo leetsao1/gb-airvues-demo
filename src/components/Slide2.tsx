@@ -51,16 +51,6 @@ const Slide2 = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-4 w-full text-center">
-        <a
-          href="https://airvues.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-white/40 hover:text-white/60 transition-colors"
-        >
-          Designed by Airvues
-        </a>
-      </div>
     </div>
   );
 };
